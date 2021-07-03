@@ -82,10 +82,10 @@ while True:
     wrist.joint2.length = 0.1
 
     a2c.pop()
-    a2c.append(get_position_from_homogenous_matrix(2))
+    a2c.append(get_position_from_homogenous_matrix(2)+ articulate.joint2.axis /2)
     a3c.pop()
     a3c.pop()
-    a3c.append(get_position_from_homogenous_matrix(2))
+    a3c.append(get_position_from_homogenous_matrix(2)+ articulate.joint2.axis/2)
     a3c.append(get_position_from_homogenous_matrix(3))
     end.pop()
     end.pop()
